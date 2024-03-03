@@ -63,12 +63,12 @@ export default function ProductsTable() {
         </div> : null}
 
 
-        <div className={`${addProduct ? 'blur' : null}`}>
+        <div className={`${addProduct ? 'blur' : null}` }>
             <div className='container'>
                 <div className='row justify-content-center'>
-                    <input type="search" onChange={(e) => handleSearch(e.target.value)} className="rounded-5 form-control w-50 mt-4"
-                        placeholder=" Search Products " />
                     <div className=" col-md-7 col-11  my-3 rounded-2  ">
+                    <input type="search" onChange={(e) => handleSearch(e.target.value)} className="rounded-5 form-control my-3"
+                        placeholder=" Search Products . . . " />
                         <table className="table table-responsive-sm table-success table-striped table-hover">
                             <thead>
                                 <tr>
@@ -111,12 +111,13 @@ export default function ProductsTable() {
                                             <td>Mine</td>
                                         </tr>
                                     )}
+
+                                </>}
                                     <tr>
-                                        <td colSpan="3" className='text-center'>
-                                            <button onClick={() => setAddProduct(true)} className='btn btn-sm btn-success w-auto'>Add Product</button>
+                                        <td colSpan="3" className='text-center '>
+                                            <button onClick={() => setAddProduct(true)} className='btn btn-sm btn-success my-2 w-auto'>Add Product</button>
                                         </td>
                                     </tr>
-                                </>}
 
                             </tbody>
                         </table>
@@ -131,7 +132,7 @@ export default function ProductsTable() {
                         </button>
                     }
 
-                    <button className='btn btn-light btn-sm m-1'>{page + 1} OF 10</button>
+                    <button className='btn btn-light btn-sm m-1'>{page + 1} of 10</button>
 
                     {page === 9 ? <button disabled className='btn btn-warning btn-sm m-1'>Next
                         <i className="fa-solid fa-angles-right px-1"></i>

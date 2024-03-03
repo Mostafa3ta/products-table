@@ -22,14 +22,14 @@ export default function AddProduct({ setAddProduct, setNewProducts }) {
 
     return <>
         <div className="addProduct text-white">
-            <button onClick={() => setAddProduct(false)} className='closeBtn btn btn-sm btn-danger'>
-                <i className="fa-solid fa-xmark"></i>
-            </button>
             <div className="row d-flex justify-content-center mt-5">
                 <div className="col-md-8 col-10 text-center">
                     <h1 className="fs-2">Add New Product</h1>
                 </div>
-                <div className="col-md-6 col-10 my-4 p-4 form-group rounded-3 text-center bg-secondary">
+                <div className="col-md-6 col-10 my-4 p-4 form-group rounded-3 text-center text-black bg-dark-subtle">
+                    <button onClick={() => setAddProduct(false)} className='closeBtn btn rounded-5 btn-danger'>
+                        <i className="fa-solid fa-x"></i>
+                    </button>
                     <form onSubmit={addProduct}>
                         <div className="p-3">
                             <label htmlFor="name" className="fs-5 mb-1">Product</label>
