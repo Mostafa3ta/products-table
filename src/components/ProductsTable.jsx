@@ -122,7 +122,7 @@ export default function ProductsTable() {
                         </table>
                     </div>
                 </div>
-                <div className='d-flex justify-content-center'>
+                <div className='d-flex justify-content-center mb-3'>
                     {page === 0 ? <button disabled className='btn btn-warning btn-sm m-1'>
                         <i className="fa-solid fa-angles-left px-1"></i> Prev
                     </button> :
